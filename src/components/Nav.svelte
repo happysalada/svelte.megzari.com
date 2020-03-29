@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
-        <div class="max-w-lg w-full lg:max-w-xs">
+        <div class="max-w-lg w-full">
           <label for="search" class="sr-only">Search</label>
           <div class="relative">
             <div
