@@ -8,85 +8,98 @@
 // underscore tells Sapper not to do that.
 
 const posts = [
-	{
-		title: 'What is Sapper?',
-		slug: 'what-is-sapper',
-		html: `
-			<p>First, you have to know what <a href='https://svelte.dev'>Svelte</a> is. Svelte is a UI framework with a bold new idea: rather than providing a library that you write code with (like React or Vue, for example), it's a compiler that turns your components into highly optimized vanilla JavaScript. If you haven't already read the <a href='https://svelte.dev/blog/frameworks-without-the-framework'>introductory blog post</a>, you should!</p>
+  {
+    title: "Template",
+    slug: "template",
+    html: `
+    <p class="py-6">
+      👋 Welcome fellow
+      <a
+        class="text-teal no-underline hover:underline"
+        href="https://www.tailwindcss.com"
+        >Tailwind CSS</a
+      >
+      and miminal monochrome blog fan. This starter template provides a starting
+      point to create your own minimal monochrome blog using Tailwind CSS and
+      vanilla Javascript.
+    </p>
 
-			<p>Sapper is a Next.js-style framework (<a href='blog/how-is-sapper-different-from-next'>more on that here</a>) built around Svelte. It makes it embarrassingly easy to create extremely high performance web apps. Out of the box, you get:</p>
+    <p class="py-6">
+      The basic blog page layout is available and all using the default Tailwind
+      CSS classes (although there are a few hardcoded style tags). If you are
+      going to use this in your project, you will want to convert the classes
+      into components.
+    </p>
 
-			<ul>
-				<li>Code-splitting, dynamic imports and hot module replacement, powered by webpack</li>
-				<li>Server-side rendering (SSR) with client-side hydration</li>
-				<li>Service worker for offline support, and all the PWA bells and whistles</li>
-				<li>The nicest development experience you've ever had, or your money back</li>
-			</ul>
+    <h1 class="py-2 font-sans">Heading 1</h1>
+    <h2 class="py-2 font-sans">Heading 2</h2>
+    <h3 class="py-2 font-sans">Heading 3</h3>
+    <h4 class="py-2 font-sans">Heading 4</h4>
+    <h5 class="py-2 font-sans">Heading 5</h5>
+    <h6 class="py-2 font-sans">Heading 6</h6>
 
-			<p>It's implemented as Express middleware. Everything is set up and waiting for you to get started, but you keep complete control over the server, service worker, webpack config and everything else, so it's as flexible as you need it to be.</p>
-		`
-	},
+    <p class="py-6">
+      Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus purus,
+      in mattis tortor sollicitudin pretium. Phasellus at diam posuere,
+      scelerisque nisl sit amet, tincidunt urna. Cras nisi diam, pulvinar ut
+      molestie eget, eleifend ac magna. Sed at lorem condimentum, dignissim
+      lorem eu, blandit massa. Phasellus eleifend turpis vel erat bibendum
+      scelerisque. Maecenas id risus dictum, rhoncus odio vitae, maximus purus.
+      Etiam efficitur dolor in dolor molestie ornare. Aenean pulvinar diam nec
+      neque tincidunt, vitae molestie quam fermentum. Donec ac pretium diam.
+      Suspendisse sed odio risus. Nunc nec luctus nisi. Class aptent taciti
+      sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      Duis nec nulla eget sem dictum elementum.
+    </p>
 
-	{
-		title: 'How to use Sapper',
-		slug: 'how-to-use-sapper',
-		html: `
-			<h2>Step one</h2>
-			<p>Create a new project, using <a href='https://github.com/Rich-Harris/degit'>degit</a>:</p>
+    <ol>
+      <li class="py-3">
+        Maecenas accumsan lacus sit amet elementum porta. Aliquam eu libero
+        lectus. Fusce vehicula dictum mi. In non dolor at sem ullamcorper
+        venenatis ut sed dui. Ut ut est quam. Suspendisse quam quam, commodo sit
+        amet placerat in, interdum a ipsum. Morbi sit amet tellus scelerisque
+        tortor semper posuere.
+      </li>
+      <li class="py-3">
+        Morbi varius posuere blandit. Praesent gravida bibendum neque eget
+        commodo. Duis auctor ornare mauris, eu accumsan odio viverra in. Proin
+        sagittis maximus pharetra. Nullam lorem mauris, faucibus ut odio tempus,
+        ultrices aliquet ex. Nam id quam eget ipsum luctus hendrerit. Ut eros
+        magna, eleifend ac ornare vulputate, pretium nec felis.
+      </li>
+      <li class="py-3">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Nunc vitae pretium elit. Cras leo mauris, tristique in
+        risus ac, tristique rutrum velit. Mauris accumsan tempor felis vitae
+        gravida. Cras egestas convallis malesuada. Etiam ac ante id tortor
+        vulputate pretium. Maecenas vel sapien suscipit, elementum odio et,
+        consequat tellus.
+      </li>
+    </ol>
 
-			<pre><code>npx degit "sveltejs/sapper-template#rollup" my-app
-			cd my-app
-			npm install # or yarn!
-			npm run dev
-			</code></pre>
+    <blockquote class="border-l-4 border-teal italic my-8 pl-8 md:pl-12">
+      Example of blockquote - Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+    </blockquote>
 
-			<h2>Step two</h2>
-			<p>Go to <a href='http://localhost:3000'>localhost:3000</a>. Open <code>my-app</code> in your editor. Edit the files in the <code>src/routes</code> directory or add new ones.</p>
-
-			<h2>Step three</h2>
-			<p>...</p>
-
-			<h2>Step four</h2>
-			<p>Resist overdone joke formats.</p>
-		`
-	},
-
-	{
-		title: 'Why the name?',
-		slug: 'why-the-name',
-		html: `
-			<p>In war, the soldiers who build bridges, repair roads, clear minefields and conduct demolitions — all under combat conditions — are known as <em>sappers</em>.</p>
-
-			<p>For web developers, the stakes are generally lower than those for combat engineers. But we face our own hostile environment: underpowered devices, poor network connections, and the complexity inherent in front-end engineering. Sapper, which is short for <strong>S</strong>velte <strong>app</strong> mak<strong>er</strong>, is your courageous and dutiful ally.</p>
-		`
-	},
-
-	{
-		title: 'How is Sapper different from Next.js?',
-		slug: 'how-is-sapper-different-from-next',
-		html: `
-			<p><a href='https://github.com/zeit/next.js'>Next.js</a> is a React framework from <a href='https://zeit.co'>Zeit</a>, and is the inspiration for Sapper. There are a few notable differences, however:</p>
-
-			<ul>
-				<li>It's powered by <a href='https://svelte.dev'>Svelte</a> instead of React, so it's faster and your apps are smaller</li>
-				<li>Instead of route masking, we encode route parameters in filenames. For example, the page you're looking at right now is <code>src/routes/blog/[slug].html</code></li>
-				<li>As well as pages (Svelte components, which render on server or client), you can create <em>server routes</em> in your <code>routes</code> directory. These are just <code>.js</code> files that export functions corresponding to HTTP methods, and receive Express <code>request</code> and <code>response</code> objects as arguments. This makes it very easy to, for example, add a JSON API such as the one <a href='blog/how-is-sapper-different-from-next.json'>powering this very page</a></li>
-				<li>Links are just <code>&lt;a&gt;</code> elements, rather than framework-specific <code>&lt;Link&gt;</code> components. That means, for example, that <a href='blog/how-can-i-get-involved'>this link right here</a>, despite being inside a blob of HTML, works with the router as you'd expect.</li>
-			</ul>
-		`
-	},
-
-	{
-		title: 'How can I get involved?',
-		slug: 'how-can-i-get-involved',
-		html: `
-			<p>We're so glad you asked! Come on over to the <a href='https://github.com/sveltejs/svelte'>Svelte</a> and <a href='https://github.com/sveltejs/sapper'>Sapper</a> repos, and join us in the <a href='https://svelte.dev/chat'>Discord chatroom</a>. Everyone is welcome, especially you!</p>
-		`
-	}
+    <p class="py-6">Example code block:</p>
+    <pre class="bg-black rounded text-white font-mono text-base p-2 md:p-4">
+      <code class="break-words whitespace-pre-wrap">
+        &lt;header class="site-header outer"&gt;
+        &lt;div class="inner"&gt;
+        {{&gt; "site-nav"}}
+        &lt;/div&gt;
+        &lt;/header&gt;
+      </code>
+    </pre>
+		`,
+    tags: ["tag"],
+    published_at: "19 February 2019"
+  }
 ];
 
 posts.forEach(post => {
-	post.html = post.html.replace(/^\t{3}/gm, '');
+  post.html = post.html.replace(/^\t{3}/gm, "");
 });
 
 export default posts;
