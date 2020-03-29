@@ -2964,10 +2964,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-preprocess@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-3.6.0.tgz#641934dbf90ee818e537d3ce361fb01f471ff0e2"
-  integrity sha512-1mWRv4WKY6xRQFxnqqXRvt2KYcPdT1qTYwIdsv66gVpSJxeUmPMaX/OkYp45pPxMOzeM976KtZ8+xw9lMamvDQ==
+svelte-preprocess@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-3.7.0.tgz#fb6e6f8e84405b949a95ac3094aceacae9f86229"
+  integrity sha512-EvfIMIHqpYgqUTJqihNsix1GeIq6d4LEvuMwGNw93TtW0XaOnbYBQHXVBdcGxlvcNeYErpkKeUR374/3AMJjew==
   dependencies:
     "@types/pug" "^2.0.4"
     "@types/sass" "^1.16.0"
