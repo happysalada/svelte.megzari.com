@@ -14,7 +14,7 @@
 </style>
 
 <div class="h-full flex flex-col justify-center text-center my-auto mx-auto">
-  <p class="text-base mx-auto text-gray-400 md:text-xl">
+  <p class="text-base text-gray-400 md:text-xl">
     Hi! I'm Raphael
   </p>
   <h2
@@ -30,7 +30,7 @@
     <br class="xl:hidden" />
     ideas to life
   </h2>
-  <p class="mt-3 md:mt-10 max-w-md mx-auto text-base text-gray-400 md:text-xl">
+  <p class="mt-3 md:mt-10 text-base text-gray-400 md:text-xl">
     welcome to my personal website.
   </p>
   <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
