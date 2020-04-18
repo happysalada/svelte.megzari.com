@@ -1,7 +1,8 @@
 <script>
   export let segment;
   let open = false;
-  let nav_active_classes = "text-blue-500 border-2 border-blue-500 ";
+  let nav_active_classes =
+    "text-blue-500 border-2 border-blue-500 hover:text-black hover:bg-blue-500";
   let nav_inactive_classes = "text-gray-300 hover:text-white hover:bg-gray-700";
   function toggleOpen() {
     open = !open;

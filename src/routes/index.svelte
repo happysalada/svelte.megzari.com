@@ -28,15 +28,15 @@
     <div class="rounded-md shadow">
       <a
         href="/blog"
-        class="w-full flex items-center justify-center px-8 py-3 border-4 border-blue-500 text-base leading-6 font-medium rounded-md bg-blue-500 hover:bg-blue-600 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+        class="w-full flex items-center justify-center px-8 py-3 border-4 border-blue-500 text-base leading-6 font-medium rounded-md bg-blue-500 hover:bg-black hover:text-blue-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
       >
         Blog
       </a>
     </div>
-    <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+    <div class="ml-3 rounded-md shadow">
       <a
         href="/about"
-        class="w-full flex items-center justify-center px-8 py-3 border-4 text-base leading-6 font-medium rounded-md text-blue-500 border-blue-500 hover:bg-gray-700 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+        class="w-full flex items-center justify-center px-8 py-3 border-4 text-base leading-6 font-medium rounded-md text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-black focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
       >
         About
       </a>
