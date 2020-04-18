@@ -1,15 +1,15 @@
 <script>
   export let segment;
   let open = false;
-  let nav_active_classes = "text-white bg-gray-900 ";
+  let nav_active_classes = "text-blue-500 border-2 border-blue-500 ";
   let nav_inactive_classes = "text-gray-300 hover:text-white hover:bg-gray-700";
   function toggleOpen() {
     open = !open;
   }
 </script>
 
-<nav class="bg-gray-800">
-  <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+<nav>
+  <div class="mx-auto px-2 sm:px-4 lg:px-8">
     <div class="relative flex items-center justify-between h-16">
       <div class="flex items-center px-2 lg:px-0">
         <div class="flex-shrink-0">
@@ -20,27 +20,24 @@
           <div class="flex">
             <a
               href="."
-              class="{ segment === undefined ? nav_active_classes : nav_inactive_classes}
-								px-3 py-2 rounded-md text-sm leading-5 font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              class="{ segment === undefined ? nav_active_classes : nav_inactive_classes} px-3 py-2 rounded-md text-sm leading-5 font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
               >Home</a
             >
             <a
               href="/about"
-              class="{ segment === 'about' ? nav_active_classes : nav_inactive_classes}
-								ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              class="{ segment === 'about' ? nav_active_classes : nav_inactive_classes} ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
               >About</a
             >
             <a
               href="/blog"
-              class="{ segment === 'blog' ? nav_active_classes : nav_inactive_classes}
-								ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              class="{ segment === 'blog' ? nav_active_classes : nav_inactive_classes} ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
               >Blog</a
             >
           </div>
         </div>
       </div>
       <div class="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
-        <div class="max-w-lg w-full">
+        <!-- <div class="max-w-lg w-full">
           <label for="search" class="sr-only">Search</label>
           <div class="relative">
             <div
@@ -64,7 +61,7 @@
               placeholder="Search"
             />
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="flex lg:hidden">
         <button
@@ -100,20 +97,17 @@
     <div class="px-2 pt-2 pb-3">
       <a
         href="."
-        class="{ segment === undefined ? nav_active_classes : nav_inactive_classes}
-					block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+        class="{ segment === undefined ? nav_active_classes : nav_inactive_classes} block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
         >Home</a
       >
       <a
         href="about"
-        class="{ segment === 'about' ? nav_active_classes : nav_inactive_classes}
-					mt-1 block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+        class="{ segment === 'about' ? nav_active_classes : nav_inactive_classes} mt-1 block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
         >About</a
       >
       <a
         href="blog"
-        class="{ segment === 'blog' ? nav_active_classes : nav_inactive_classes}
-					mt-1 block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+        class="{ segment === 'blog' ? nav_active_classes : nav_inactive_classes} mt-1 block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
         >Blog</a
       >
     </div>

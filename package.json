@@ -43,6 +43,6 @@
     "sapper": "^0.27.12",
     "svelte": "^3.0.0",
     "svelte-preprocess": "^3.7.1",
-    "tailwindcss": "^1.0.1"
+    "tailwindcss": "^1.2"
   }
 }
