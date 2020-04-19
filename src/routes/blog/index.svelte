@@ -9,6 +9,7 @@
 </script>
 
 <script>
+  import Tag from "../../components/Tag.svelte";
   export let posts;
 </script>
 
@@ -16,22 +17,33 @@
   <title>Blog</title>
 </svelte:head>
 
-<div class="h-full flex flex-col justify-center text-center">
-  <h1 class="text-white">Recent posts</h1>
+<!--Title-->
+<div class="font-sans">
+  <h1 class="font-sans break-normal text-white pt-6 pb-2 text-3xl md:text-4xl">
+    Recent posts
+  </h1>
 
   <ul>
-    {#each posts as post}
+    {#each posts as {title, tags, outline, slug}}
     <!-- we're using the non-standard `rel=prefetch` attribute to
         tell Sapper to load the data for the page as soon as
         the user hovers over the link or taps it, instead of
         waiting for the 'click' event -->
     <li>
-      <a class="text-white" rel="prefetch" href="blog/{post.slug}">
-        {post.title}
+      <a class="text-blue-500" rel="prefetch" href="blog/{slug}">
+        <h2>
+          {title}
+        </h2>
+        <p class="mt-3 text-white text-base">
+          {outline}
+        </p>
+
+        <p class="mt-3 text-sm font-normal text-gray-500">
+          Tags: {#each tags as tag}
+            <Tag { tag }/>
+          {/each}
+        </p>
       </a>
-      <p class="text-white">
-        {post.outline}
-      </p>
     </li>
     {/each}
   </ul>
