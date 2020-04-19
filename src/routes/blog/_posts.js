@@ -93,7 +93,7 @@ const posts = [
     title: "About this site",
     slug: "about_this_site",
     outline:
-      "A brief description of the technologies used to create this website",
+      "A brief reference to the technologies used to create this website",
     html: `
     <p class="py-6">
       This site was created using

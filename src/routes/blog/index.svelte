@@ -29,6 +29,9 @@
       <a class="text-white" rel="prefetch" href="blog/{post.slug}">
         {post.title}
       </a>
+      <p class="text-white">
+        {post.outline}
+      </p>
     </li>
     {/each}
   </ul>
