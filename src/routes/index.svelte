@@ -17,14 +17,9 @@
   <p class="text-base text-gray-400 md:text-xl">
     Hi! I'm Raphael
   </p>
-  <h2
-    class="headline tracking-tight leading-10 font-extrabold text-white mt-3 md:mt-10"
-  >
+  <h2 class="headline tracking-tight leading-10 font-extrabold text-white mt-3 md:mt-10">
     I
-    <a
-      href="https://github.com/happysalada"
-      class="leading-6 text-blue-500 hover:text-blue-300"
-    >
+    <a href="https://github.com/happysalada" class="leading-6 text-blue-500 hover:text-blue-300">
       code
     </a>
     <br class="xl:hidden" />
