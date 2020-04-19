@@ -37,7 +37,7 @@
     <div class="rounded-md shadow">
       <a
         href="/blog"
-        class="w-full flex items-center justify-center px-8 py-3 border-4 border-blue-500 text-base leading-6 font-medium rounded-md bg-blue-500 hover:bg-black hover:text-blue-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+        class="w-full flex items-center justify-center px-8 py-3 border-4 border-blue-500 text-base text-black leading-6 font-medium rounded-md bg-blue-500 hover:bg-black hover:text-blue-500 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
       >
         Blog
       </a>
