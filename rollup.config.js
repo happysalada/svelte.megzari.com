@@ -18,7 +18,7 @@ const onwarn = (warning, onwarn) =>
   (warning.code === "CIRCULAR_DEPENDENCY" &&
     /[/\\]@sapper[/\\]/.test(warning.message)) ||
   onwarn(warning);
-const dedupe = importee =>
+const dedupe = (importee) =>
   importee === "svelte" || importee.startsWith("svelte/");
 
 const postcssPlugins = (purgecss = false) => {
@@ -33,26 +33,26 @@ const postcssPlugins = (purgecss = false) => {
         content: ["./**/*.svelte", "./src/template.html"],
         extractors: [
           {
-            extractor: PurgeSvelte,
+            extractor: PurgeSvelte.extract,
 
             // Specify the file extensions to include when scanning for
             // class names.
-            extensions: ["svelte", "html"]
-          }
+            extensions: ["svelte", "html"],
+          },
         ],
         // Whitelist selectors to stop Purgecss from removing them from your CSS.
-        whitelist: []
+        whitelist: [],
       }),
-    !dev && require("cssnano")
+    !dev && require("cssnano"),
   ].filter(Boolean);
 };
 
 const preprocess = getPreprocessor({
   transformers: {
     postcss: {
-      plugins: postcssPlugins() // Don't need purgecss because Svelte handle unused css for you.
-    }
-  }
+      plugins: postcssPlugins(), // Don't need purgecss because Svelte handle unused css for you.
+    },
+  },
 });
 
 export default {
@@ -62,17 +62,17 @@ export default {
     plugins: [
       replace({
         "process.browser": true,
-        "process.env.NODE_ENV": JSON.stringify(mode)
+        "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
         dev,
         hydratable: true,
         emitCss: true,
-        preprocess
+        preprocess,
       }),
       resolve({
         browser: true,
-        dedupe
+        dedupe,
       }),
       commonjs(),
 
@@ -85,27 +85,27 @@ export default {
             [
               "@babel/preset-env",
               {
-                targets: "> 0.25%, not dead"
-              }
-            ]
+                targets: "> 0.25%, not dead",
+              },
+            ],
           ],
           plugins: [
             "@babel/plugin-syntax-dynamic-import",
             [
               "@babel/plugin-transform-runtime",
               {
-                useESModules: true
-              }
-            ]
-          ]
+                useESModules: true,
+              },
+            ],
+          ],
         }),
 
       !dev &&
         terser({
-          module: true
-        })
+          module: true,
+        }),
     ],
-    onwarn
+    onwarn,
   },
 
   server: {
@@ -114,27 +114,27 @@ export default {
     plugins: [
       replace({
         "process.browser": false,
-        "process.env.NODE_ENV": JSON.stringify(mode)
+        "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       svelte({
         generate: "ssr",
         dev,
-        preprocess
+        preprocess,
       }),
       resolve({
-        dedupe
+        dedupe,
       }),
       commonjs(),
       postcss({
         plugins: postcssPlugins(!dev),
-        extract: path.resolve(__dirname, "./static/global.css")
-      })
+        extract: path.resolve(__dirname, "./static/global.css"),
+      }),
     ],
     external: Object.keys(pkg.dependencies).concat(
       require("module").builtinModules ||
         Object.keys(process.binding("natives"))
     ),
-    onwarn
+    onwarn,
   },
 
   serviceworker: {
@@ -144,11 +144,11 @@ export default {
       resolve(),
       replace({
         "process.browser": true,
-        "process.env.NODE_ENV": JSON.stringify(mode)
+        "process.env.NODE_ENV": JSON.stringify(mode),
       }),
       commonjs(),
-      !dev && terser()
+      !dev && terser(),
     ],
-    onwarn
-  }
+    onwarn,
+  },
 };
