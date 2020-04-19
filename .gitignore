@@ -5,4 +5,4 @@ yarn-error.log
 /__sapper__/
 wrangler.toml
 /workers-site/
-/static/global-compiled.css.css
+/static/global-compiled.css
