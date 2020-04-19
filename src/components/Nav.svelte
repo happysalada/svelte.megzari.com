@@ -3,7 +3,9 @@
   let open = false;
   let nav_active_classes =
     "text-blue-500 border-2 border-blue-500 hover:text-black hover:bg-blue-500";
-  let nav_inactive_classes = "text-gray-300 hover:text-white hover:bg-gray-700";
+  let nav_inactive_classes = "text-white hover:text-black hover:bg-blue-500";
+  let nav_default_classes =
+    "px-3 py-2 rounded-md text-sm leading-5 font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out";
   function toggleOpen() {
     open = !open;
   }
@@ -21,17 +23,17 @@
           <div class="flex">
             <a
               href="."
-              class="{ segment === undefined ? nav_active_classes : nav_inactive_classes} px-3 py-2 rounded-md text-sm leading-5 font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              class="{ segment === undefined ? nav_active_classes : nav_inactive_classes} { nav_default_classes }"
               >Home</a
             >
             <a
               href="/about"
-              class="{ segment === 'about' ? nav_active_classes : nav_inactive_classes} ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              class="{ segment === 'about' ? nav_active_classes : nav_inactive_classes} ml-4 { nav_default_classes }"
               >About</a
             >
             <a
               href="/blog"
-              class="{ segment === 'blog' ? nav_active_classes : nav_inactive_classes} ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              class="{ segment === 'blog' ? nav_active_classes : nav_inactive_classes} ml-4 { nav_default_classes }"
               >Blog</a
             >
           </div>

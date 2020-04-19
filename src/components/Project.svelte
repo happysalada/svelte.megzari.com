@@ -19,7 +19,7 @@
     >
       { project.client.name }
     </a>
-    - { project.client.description }
+    - { project.client.caption }
   </p>
 
   <p class="mt-3 md:mt-10 text-base md:text-xl">
