@@ -44,6 +44,16 @@
         {/each}
       </p>
     </div>
+    <p class="py-6">
+      I'm a developper who thinks of programming as a form of Art!<br />
+      <br />
+      I'm quite interested in the biotech space. contact me if there is
+      something you want to make.<br />
+      <br />
+      raphael at megzari dot com<br />
+      <br />
+      Here is my portfolio:
+    </p>
   </div>
 </div>
 <!--/container-->
