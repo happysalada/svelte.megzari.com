@@ -1,39 +1,56 @@
 <script>
-  export let segment;
-  let open = false;
-  let nav_active_classes =
-    "text-blue-500 border-2 border-blue-500 hover:text-black hover:bg-blue-500";
-  let nav_inactive_classes = "text-white hover:text-black hover:bg-blue-500";
-  let nav_default_classes =
-    "px-3 py-2 rounded-md text-sm leading-5 font-medium focus:shadow-outline focus:text-blue-500 focus:bg-black transition duration-150 ease-in-out";
+  export let segment
+  let open = false
   function toggleOpen() {
-    open = !open;
+    open = !open
   }
 </script>
+
+<style>
+  .nav-default {
+    @apply px-3 py-2 rounded-md text-sm leading-5 font-medium  transition duration-150 ease-in-out;
+  }
+
+  .nav-default:focus {
+    @apply shadow-outline text-blue-500 bg-black;
+  }
+
+  .nav-active {
+    @apply text-blue-500 border-2 border-blue-500;
+  }
+
+  .nav-active:hover {
+    @apply text-black bg-blue-500;
+  }
+
+  .nav-inactive {
+    @apply text-white;
+  }
+
+  .nav-inactive:hover {
+    @apply text-black bg-blue-500;
+  }
+</style>
 
 <nav>
   <div class="mx-auto px-2 sm:px-4 lg:px-8">
     <div class="relative flex items-center justify-between h-16">
       <div class="flex items-center px-2 lg:px-0">
-        <div class="flex-shrink-0">
-          <img class="block lg:hidden h-8 w-auto" alt="" />
-          <img class="hidden lg:block h-8 w-auto" alt="" />
-        </div>
         <div class="hidden lg:block lg:ml-6">
           <div class="flex">
             <a
               href="."
-              class="{ segment === undefined ? nav_active_classes : nav_inactive_classes} { nav_default_classes }"
+              class="{ segment === undefined ? 'nav-active' : 'nav-inactive' } nav-default"
               >Home</a
             >
             <a
               href="/about"
-              class="{ segment === 'about' ? nav_active_classes : nav_inactive_classes} ml-4 { nav_default_classes }"
+              class="{ segment === 'about' ? 'nav-active' : 'nav-inactive'} ml-4 nav-default"
               >About</a
             >
             <a
               href="/blog"
-              class="{ segment === 'blog' ? nav_active_classes : nav_inactive_classes} ml-4 { nav_default_classes }"
+              class="{ segment === 'blog' ? 'nav-active' : 'nav-inactive' } ml-4 nav-default"
               >Blog</a
             >
           </div>
@@ -71,12 +88,7 @@
           on:click="{toggleOpen}"
           class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
         >
-          <svg
-            class="h-6 w-6"
-            stroke="currentColor"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
+          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
             <path
               class="{open ? 'hidden' : 'inline-flex' }"
               stroke-linecap="round"
@@ -98,19 +110,17 @@
   </div>
   <div class="{open ? 'block' : 'hidden'} lg:hidden">
     <div class="px-2 pt-2 pb-3">
-      <a
-        href="."
-        class="{ segment === undefined ? nav_active_classes : nav_inactive_classes} block { nav_default_classes }"
+      <a href="." class="{ segment === undefined ? 'nav-active' : 'nav-inactive'} block nav-default"
         >Home</a
       >
       <a
         href="about"
-        class="{ segment === 'about' ? nav_active_classes : nav_inactive_classes} mt-1 block { nav_default_classes }"
+        class="{ segment === 'about' ? 'nav-active' : 'nav-inactive'} mt-1 block nav-default"
         >About</a
       >
       <a
         href="blog"
-        class="{ segment === 'blog' ? nav_active_classes : nav_inactive_classes} mt-1 block { nav_default_classes }"
+        class="{ segment === 'blog' ? 'nav-active' : 'nav-inactive'} mt-1 block nav-default"
         >Blog</a
       >
     </div>
