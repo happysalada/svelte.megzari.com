@@ -1,4 +1,5 @@
 <script>
+  import Tag from "./Tag.svelte";
   export let project;
 </script>
 <div
@@ -26,11 +27,7 @@
   </p>
   <p class="mt-3 md:mt-10 text-sm font-normal text-gray-500">
     Tags: {#each project.tags as tag}
-    <span
-      class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 text-blue-500 border-2 border-blue-500 mx-1 my-1"
-    >
-      {tag}
-    </span>
+      <Tag { tag }/>
     {/each}
   </p>
 </div>
