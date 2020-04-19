@@ -90,10 +90,9 @@
 // </pre>
 const posts = [
   {
-    title: "About this site",
-    slug: "about_this_site",
-    outline:
-      "A brief reference to the technologies used to create this website",
+    title: 'About this site',
+    slug: 'about_this_site',
+    outline: 'A brief reference to the technologies used to create this website',
     html: `
     <p class="py-6">
       This site was created using
@@ -128,22 +127,22 @@ const posts = [
       It was started from this
       <a
         class="text-blue-500 no-underline hover:underline"
-        href="https://github.com/langbamit/sapper-postcss-tailwind-rollup"
+        href="https://github.com/garlandcrow/sapper-starter"
         >starter template
       </a>.
     </p>
 		`,
     tags: [
-      { name: "Svelte", link: "https://svelte.dev/" },
-      { name: "Sapper", link: "https://sapper.svelte.dev/" },
-      { name: "Tailwind", link: "https://www.tailwindcss.com" },
+      { name: 'Svelte', link: 'https://svelte.dev/' },
+      { name: 'Sapper', link: 'https://sapper.svelte.dev/' },
+      { name: 'Tailwind', link: 'https://www.tailwindcss.com' },
     ],
-    published_at: "19 April 2020",
+    published_at: '19 April 2020',
   },
-];
+]
 
 posts.forEach((post) => {
-  post.html = post.html.replace(/^\t{3}/gm, "");
-});
+  post.html = post.html.replace(/^\t{3}/gm, '')
+})
 
-export default posts;
+export default posts
