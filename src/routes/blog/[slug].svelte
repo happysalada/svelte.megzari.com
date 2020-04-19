@@ -14,6 +14,7 @@
 </script>
 
 <script>
+  import Tag from "../../components/Tag.svelte";
   export let post;
 </script>
 
@@ -25,7 +26,7 @@
   .content-grid {
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
-    grid-template-rows: 10vh minmax(80vh, auto) 10vh;
+    grid-template-rows: 10vh minmax(60vh, auto) 10vh;
     grid-template-areas:
       ". . ."
       ". content ."
@@ -54,11 +55,7 @@
       </p>
       <p class="text-sm font-normal text-gray-500">
         Tags: {#each post.tags as tag}
-        <span
-          class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 text-blue-500 border-2 border-blue-500 mx-1 my-1"
-        >
-          {tag}
-        </span>
+        <Tag {tag} />
         {/each}
       </p>
     </div>
