@@ -37,7 +37,7 @@
     <div class="relative flex items-center justify-between h-16">
       <div class="flex items-center px-2 lg:px-0">
         <div class="hidden lg:block lg:ml-6">
-          <div class="flex">
+          <div class="flex space-x-4">
             <a
               href="."
               class="{ segment === undefined ? 'nav-active' : 'nav-inactive' } nav-default"
@@ -45,12 +45,12 @@
             >
             <a
               href="/about"
-              class="{ segment === 'about' ? 'nav-active' : 'nav-inactive'} ml-4 nav-default"
+              class="{ segment === 'about' ? 'nav-active' : 'nav-inactive'} nav-default"
               >About</a
             >
             <a
               href="/blog"
-              class="{ segment === 'blog' ? 'nav-active' : 'nav-inactive' } ml-4 nav-default"
+              class="{ segment === 'blog' ? 'nav-active' : 'nav-inactive' } nav-default"
               >Blog</a
             >
           </div>
@@ -109,18 +109,18 @@
     </div>
   </div>
   <div class="{open ? 'block' : 'hidden'} lg:hidden">
-    <div class="px-2 pt-2 pb-3">
-      <a href="." class="{ segment === undefined ? 'nav-active' : 'nav-inactive'} block nav-default"
+    <div class="px-2 pt-2 pb-3 flex flex-col space-y-1">
+      <a href="." class="{ segment === undefined ? 'nav-active' : 'nav-inactive'} nav-default"
         >Home</a
       >
       <a
         href="about"
-        class="{ segment === 'about' ? 'nav-active' : 'nav-inactive'} mt-1 block nav-default"
+        class="{ segment === 'about' ? 'nav-active' : 'nav-inactive'} nav-default"
         >About</a
       >
       <a
         href="blog"
-        class="{ segment === 'blog' ? 'nav-active' : 'nav-inactive'} mt-1 block nav-default"
+        class="{ segment === 'blog' ? 'nav-active' : 'nav-inactive'} nav-default"
         >Blog</a
       >
     </div>

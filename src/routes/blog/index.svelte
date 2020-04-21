@@ -30,15 +30,16 @@
         the user hovers over the link or taps it, instead of
         waiting for the 'click' event -->
     <li>
-      <a class="text-blue-500" rel="prefetch" href="blog/{slug}">
+      <a class="text-blue-500 space-y-3" rel="prefetch" href="blog/{slug}">
         <h2>
           {title}
         </h2>
-        <p class="mt-3 text-white text-base">
+
+        <p class="text-white text-base">
           {outline}
         </p>
 
-        <p class="mt-3 text-sm font-normal text-gray-500">
+        <p class="text-sm font-normal text-gray-500">
           Tags: {#each tags as tag}
             <Tag { tag }/>
           {/each}
