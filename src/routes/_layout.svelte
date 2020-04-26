@@ -1,19 +1,36 @@
 <script>
-  import Nav from '../components/Nav.svelte';
-  import Footer from '../components/Footer.svelte';
+  import Nav from '../components/Nav.svelte'
+  import Footer from '../components/Footer.svelte'
 
-  export let segment;
+  export let segment
 </script>
+
+<div class="grid">
+  <div class="nav">
+    <Nav {segment} />
+  </div>
+
+  <div class="main">
+    <main class="h-full">
+      <slot />
+    </main>
+  </div>
+
+  <div class="footer">
+    <Footer />
+  </div>
+</div>
+
 <style>
   /* minmax on the nav is used for expansion on mobile */
   /* minmax on the main is used for long main content */
   .grid {
     display: grid;
     grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) 10vh;
-    grid-template-areas: 
-      "nav"
-      "main"
-      "footer";
+    grid-template-areas:
+      'nav'
+      'main'
+      'footer';
   }
 
   .nav {
@@ -28,19 +45,3 @@
     grid-area: footer;
   }
 </style>
-
-<div class="grid">
-  <div class="nav">
-    <Nav {segment}/>
-  </div>
-
-  <div class="main">
-    <main class="h-full">
-      <slot></slot>
-    </main>
-  </div>
-
-  <div class="footer">
-    <Footer />
-  </div>
-</div>
