@@ -1,7 +1,3 @@
-<script>
-  export let segment
-</script>
-
 <svelte:head>
   <title>Megzari.com</title>
 </svelte:head>
