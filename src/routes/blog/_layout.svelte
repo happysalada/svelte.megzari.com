@@ -1,3 +1,7 @@
+<script>
+  export let segment
+</script>
+
 <div class="content-grid">
   <div
     class="content w-full text-xl leading-normal text-white"

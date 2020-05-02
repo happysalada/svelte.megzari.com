@@ -6,19 +6,17 @@
 </script>
 
 <div class="grid">
-  <div class="nav">
+  <nav class="nav">
     <Nav {segment} />
-  </div>
+  </nav>
 
-  <div class="main">
-    <main class="h-full">
-      <slot />
-    </main>
-  </div>
+  <main class="main h-full">
+    <slot />
+  </main>
 
-  <div class="footer">
+  <footer class="footer">
     <Footer />
-  </div>
+  </footer>
 </div>
 
 <style>

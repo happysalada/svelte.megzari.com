@@ -11,6 +11,7 @@
 <script>
   import Project from '../components/Project.svelte'
   export let projects
+  export let segment
 </script>
 
 <svelte:head>

@@ -14,8 +14,15 @@
 </script>
 
 <script>
+  import { onMount } from 'svelte';
   import Tag from "../../components/Tag.svelte";
   export let post;
+  onMount(async () => {
+    const commento=document.createElement('script')
+    commento.setAttribute("type","text/javascript")
+    commento.setAttribute("src", "https://cdn.commento.io/js/commento.js")
+    document.head.appendChild(commento);
+	});
 </script>
 
 <svelte:head>
