@@ -44,7 +44,7 @@
     "sapper": "^0.27.0",
     "stylelint": "^13.3.3",
     "stylelint-config-recommended": "^3.0.0",
-    "svelte": "^3.21.0",
+    "svelte": "^3.22.1",
     "svelte-loader": "^2.13.6",
     "svelte-loader-hot": "^0.3.0",
     "svelte-preprocess": "^3.7.4",
