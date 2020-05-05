@@ -7793,10 +7793,10 @@ postcss@^6.0.9:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-prettier-plugin-svelte@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-1.0.0.tgz#0a5405e669a88dbac83efc15babe859f3313670e"
-  integrity sha512-i+WMmzA4tUkbA6eWcIOg8+HCpujFZ0qRVJTByos+E9jHdmvUHlltc7qnQ+ckQGm4B9wO8A4IpxeWK0Ui5mDmlw==
+prettier-plugin-svelte@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-1.1.0.tgz#e6ec282d8457598b0c02164083b11ad8cb8ab304"
+  integrity sha512-wmIggG/ryV0wcmE9D5p+k5TwKDpS2SGKJpF6IV1aYHK7dkBJD+di1w47Ci00DRsI4RrXZRC2Ef37DSyrTb6Zqg==
 
 prettier@^2.0.5:
   version "2.0.5"
