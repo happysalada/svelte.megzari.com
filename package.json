@@ -42,7 +42,7 @@
     "prettier-plugin-svelte": "^1.1.0",
     "purgecss-from-svelte": "^2.0.2",
     "sapper": "^0.27.13",
-    "stylelint": "^13.4.1",
+    "stylelint": "^13.5.0",
     "stylelint-config-recommended": "^3.0.0",
     "svelte": "^3.22.3",
     "svelte-loader": "^2.13.6",
