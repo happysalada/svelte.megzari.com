@@ -30,7 +30,7 @@
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-centered": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
+    "@storybook/addons": "^5.3.19",
     "@storybook/svelte": "^5.3.18",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
