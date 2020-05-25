@@ -29,7 +29,7 @@
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-centered": "^5.3.19",
-    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/svelte": "^5.3.19",
     "autoprefixer": "^9.8.0",
