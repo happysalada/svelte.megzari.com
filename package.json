@@ -47,7 +47,7 @@
     "svelte": "^3.23.1",
     "svelte-loader": "^2.13.6",
     "svelte-loader-hot": "^0.3.0",
-    "svelte-preprocess": "^3.9.6",
+    "svelte-preprocess": "^3.9.7",
     "tailwindcss": "^1.4.6",
     "webpack": "^4.43.0"
   }
