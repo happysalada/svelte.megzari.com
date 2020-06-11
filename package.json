@@ -22,7 +22,7 @@
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "next",
-    "sirv": "^0.4.6"
+    "sirv": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
