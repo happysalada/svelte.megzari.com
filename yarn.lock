@@ -9442,10 +9442,10 @@ svelte-loader@^2.13.6:
     loader-utils "^1.1.0"
     svelte-dev-helper "^1.1.9"
 
-svelte-preprocess@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.0.1.tgz#f99f2814210978be53f82df48b56a88a2bf6ed26"
-  integrity sha512-CDX6mkUFardoKxwFeSNbEnlgiK54Lp22XvOXfWGLOl+CZHi/+tnF0cx69tRrgnFYSFfuKvcAPOxezriFcFVujA==
+svelte-preprocess@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.0.5.tgz#046885f8d8b4a914cd0862e55b844a12fc6eab1b"
+  integrity sha512-056G1HrGXjNracwpNVBwaLfmLN0I2Rk2T3hCANARQa32xh5bFHGNOWs8ZA6sXbkizBkiYLNPQ+p4S4M8k5JbAQ==
   dependencies:
     "@types/pug" "^2.0.4"
     "@types/sass" "^1.16.0"
