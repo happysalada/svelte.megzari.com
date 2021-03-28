@@ -1,7 +1,17 @@
-import posts from './_posts.js'
+import posts from './_posts'
+
+interface Post {
+  title: string;
+  outline: string;
+  tags: {
+    name: string;
+    link: string;
+  }[];
+  slug: string;
+}
 
 const body = JSON.stringify(
-  posts.map(({ title, outline, tags, slug }) => {
+  posts.map(({ title, outline, tags, slug }: Post) => {
     return { title, outline, tags, slug }
   })
 )

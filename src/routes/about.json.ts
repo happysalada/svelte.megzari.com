@@ -1,4 +1,4 @@
-import projects from './_projects.js'
+import projects from './_projects'
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}

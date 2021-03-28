@@ -5,3 +5,8 @@
 /functions
 .idea/.gitignore
 .idea/
+
+# wrangler
+workers-site
+dist
+wrangler.toml

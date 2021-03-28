@@ -5,10 +5,8 @@
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "start": "svelte-kit start",
-    "format": "prettier --write ./src/**/*.{svelte,ts}",
     "lint": "eslint ./src/**/*.{ts,svelte}",
-    "lint:fix": "eslint --fix ./src/**/*.{ts,svelte}",
-    "prelint": "npm run format"
+    "lint:fix": "eslint --fix ./src/**/*.{ts,svelte}"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "next",

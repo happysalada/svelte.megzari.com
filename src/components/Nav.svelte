@@ -120,12 +120,12 @@
       >Home</a
     >
     <a
-      href="about"
+      href="/about"
       class="{ path === '/about' ? 'nav-active' : 'nav-inactive'} nav-default"
       >About</a
     >
     <a
-      href="blog"
+      href="/blog"
       class="{ path === '/blog' ? 'nav-active' : 'nav-inactive'} nav-default"
       >Blog</a
     >
