@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
   /**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
@@ -19,7 +19,7 @@
   }
 </script>
 
-<script>
+<script lang="ts">
   import Project from '../components/Project.svelte'
   export let projects
 </script>
