@@ -8,11 +8,9 @@ posts.forEach((post) => {
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
  */
-export async function get({ params }) {
+export async function get({ params: {slug} }: {params: {slug: String}}) {
   // the `slug` parameter is available because this file
   // is called [slug].json.js
-  const { slug } = params
-
   if (lookup.has(slug)) {
     return {
       body: lookup.get(slug),
