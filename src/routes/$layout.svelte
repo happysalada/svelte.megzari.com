@@ -2,10 +2,26 @@
 	import "../global.css";
   import Nav from '../components/Nav.svelte'
   import Footer from '../components/Footer.svelte'
+  import { onMount } from 'svelte';
+
+  let loaded = false
 
   import { page } from '$app/stores'
+  onMount(async () => {
+		loaded = true;
+	});
 </script>
 
+{#if !loaded }
+<section class="overflow-x-hidden w-screen relative">
+  <div class="fade-in h-screen flex flex-col items-center justify-center">
+    <h1 class="font-sans text-white sm:text-xl lg:text-3xl">
+      YOU ARE AWESOME!
+    </h1>
+    <div class="lds-heart"><div>
+  </div>
+</section>
+{:else}
 <div class="grid">
   <nav class="nav">
     <Nav path={$page.path} />
@@ -19,6 +35,7 @@
     <Footer />
   </footer>
 </div>
+{/if}
 
 <style>
   /* minmax on the nav is used for expansion on mobile */

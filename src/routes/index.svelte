@@ -1,6 +1,7 @@
 <svelte:head>
   <title>Megzari.com</title>
 </svelte:head>
+
 <div class="h-full flex flex-col justify-center text-center my-auto mx-auto">
   <p class="text-base text-gray-400 md:text-xl">Hi! I'm Raphael</p>
   <h2

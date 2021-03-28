@@ -1,4 +1,5 @@
 const tailwindcss = require('@tailwindcss/jit')
+const postcssImport = require('postcss-import')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
 
@@ -8,6 +9,7 @@ const dev = mode === 'development'
 module.exports = {
   plugins: [
     // Some plugins, like postcss-nested, need to run before Tailwind
+    postcssImport,
 
     tailwindcss,
 
