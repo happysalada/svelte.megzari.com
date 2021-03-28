@@ -1,9 +1,10 @@
-import projects from "./_projects.js";
+import projects from './_projects.js'
 
-export function get(req, res) {
-  res.writeHead(200, {
-    "Content-Type": "application/json",
-  });
-
-  res.end(JSON.stringify(projects));
+/**
+ * @type {import('@sveltejs/kit').RequestHandler}
+ */
+export function get() {
+  return {
+    body: JSON.stringify(projects),
+  }
 }

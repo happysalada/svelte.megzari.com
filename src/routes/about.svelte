@@ -1,10 +1,21 @@
 <script context="module">
-  export function preload({ params, query }) {
-    return this.fetch(`about.json`)
-      .then((r) => r.json())
-      .then((projects) => {
-        return { projects }
-      })
+  /**
+	 * @type {import('@sveltejs/kit').Load}
+	 */
+  export async function load({ page, fetch }) {
+    const res = await fetch("/about.json")
+    if (res.ok) {
+			return {
+				props: {
+					projects: await res.json()
+				}
+			};
+		}
+
+		return {
+			status: res.status,
+			error: new Error(`Could not load about.json`)
+		};
   }
 </script>
 
@@ -35,8 +46,8 @@
         I'm a developper who thinks of programming as a form of Art!
         <br />
         <br />
-        I'm quite interested in the biotech space. contact me if there is
-        something you want to make.
+        I'm quite interested in alternatives to capitalism. contact me if you're a cooperative
+        and you want some help.
         <br />
         <br />
         raphael at megzari dot com

@@ -1,8 +1,7 @@
 .DS_Store
-node_modules
-yarn-error.log
-/cypress/screenshots/
-/__sapper__/
-wrangler.toml
-/workers-site/
-/static/global-compiled.css
+/node_modules
+/.svelte
+/build
+/functions
+.idea/.gitignore
+.idea/

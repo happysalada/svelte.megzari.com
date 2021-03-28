@@ -1,5 +1,5 @@
 <script>
-  export let segment
+  export let path
   let open = false
   function toggleOpen() {
     open = !open
@@ -12,7 +12,7 @@
   }
 
   .nav-default:focus {
-    @apply shadow-outline text-blue-500 bg-black;
+    @apply ring text-blue-500 bg-black;
   }
 
   .nav-active {
@@ -39,17 +39,17 @@
         <div class="flex space-x-4">
           <a
             href="."
-            class="{ segment === undefined ? 'nav-active' : 'nav-inactive' } nav-default"
+            class="{ path === '/' ? 'nav-active' : 'nav-inactive' } nav-default"
             >Home</a
           >
           <a
             href="/about"
-            class="{ segment === 'about' ? 'nav-active' : 'nav-inactive'} nav-default"
+            class="{ path === '/about' ? 'nav-active' : 'nav-inactive'} nav-default"
             >About</a
           >
           <a
             href="/blog"
-            class="{ segment === 'blog' ? 'nav-active' : 'nav-inactive' } nav-default"
+            class="{ path === '/blog' ? 'nav-active' : 'nav-inactive' } nav-default"
             >Blog</a
           >
         </div>
@@ -87,7 +87,12 @@
         on:click="{toggleOpen}"
         class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
       >
-        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+        <svg
+          class="h-6 w-6"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
           <path
             class="{open ? 'hidden' : 'inline-flex' }"
             stroke-linecap="round"
@@ -109,17 +114,19 @@
 </div>
 <div class="{open ? 'block' : 'hidden'} lg:hidden">
   <div class="px-2 pt-2 pb-3 flex flex-col space-y-1">
-    <a href="." class="{ segment === undefined ? 'nav-active' : 'nav-inactive'} nav-default"
+    <a
+      href="."
+      class="{ path === '/' ? 'nav-active' : 'nav-inactive'} nav-default"
       >Home</a
     >
     <a
       href="about"
-      class="{ segment === 'about' ? 'nav-active' : 'nav-inactive'} nav-default"
+      class="{ path === '/about' ? 'nav-active' : 'nav-inactive'} nav-default"
       >About</a
     >
     <a
       href="blog"
-      class="{ segment === 'blog' ? 'nav-active' : 'nav-inactive'} nav-default"
+      class="{ path === '/blog' ? 'nav-active' : 'nav-inactive'} nav-default"
       >Blog</a
     >
   </div>

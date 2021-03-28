@@ -1,15 +1,21 @@
 <script context="module">
-  export async function preload({ params, query }) {
-    // the `slug` parameter is available because
-    // this file is called [slug].svelte
-    const res = await this.fetch(`blog/${params.slug}.json`);
-    const data = await res.json();
+  /**
+	 * @type {import('@sveltejs/kit').Load}
+	 */
+  export async function load({ page, fetch }) {
+    const res = await fetch(`/blog/${page.params.slug}.json`)
+    if (res.ok) {
+			return {
+				props: {
+					post: await res.json()
+				}
+			};
+		}
 
-    if (res.status === 200) {
-      return { post: data };
-    } else {
-      this.error(res.status, data.message);
-    }
+		return {
+			status: res.status,
+			error: new Error(`Could not load blog/${page.params.slug}.json`)
+		};
   }
 </script>
 
@@ -17,12 +23,6 @@
   import { onMount } from 'svelte';
   import Tag from "../../components/Tag.svelte";
   export let post;
-  onMount(async () => {
-    const commento=document.createElement('script')
-    commento.setAttribute("type","text/javascript")
-    commento.setAttribute("src", "https://cdn.commento.io/js/commento.js")
-    document.head.appendChild(commento);
-	});
 </script>
 
 <svelte:head>
@@ -47,5 +47,3 @@
 </div>
 
 {@html post.html }
-
-<div id="commento"></div>

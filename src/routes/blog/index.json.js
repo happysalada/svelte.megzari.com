@@ -1,15 +1,16 @@
-import posts from "./_posts.js";
+import posts from './_posts.js'
 
-const contents = JSON.stringify(
+const body = JSON.stringify(
   posts.map(({ title, outline, tags, slug }) => {
-    return { title, outline, tags, slug };
+    return { title, outline, tags, slug }
   })
-);
+)
 
-export function get(req, res) {
-  res.writeHead(200, {
-    "Content-Type": "application/json",
-  });
-
-  res.end(contents);
+/**
+ * @type {import('@sveltejs/kit').RequestHandler}
+ */
+export function get() {
+  return {
+    body,
+  }
 }

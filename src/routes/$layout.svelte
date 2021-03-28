@@ -2,12 +2,12 @@
   import Nav from '../components/Nav.svelte'
   import Footer from '../components/Footer.svelte'
 
-  export let segment
+  import { page } from '$app/stores'
 </script>
 
 <div class="grid">
   <nav class="nav">
-    <Nav {segment} />
+    <Nav path={$page.path} />
   </nav>
 
   <main class="main h-full">

@@ -92,7 +92,8 @@ const posts = [
   {
     title: 'About this site',
     slug: 'about_this_site',
-    outline: 'A brief reference to the technologies used to create this website',
+    outline:
+      'A brief reference to the technologies used to create this website',
     html: `
     <p class="py-6">
       This site was created using
@@ -105,18 +106,11 @@ const posts = [
 
       <a
         class="text-blue-500 no-underline hover:underline"
-        href="https://sapper.svelte.dev/"
+        href="https://kit.svelte.dev/"
         >
-        Sapper
+        Svelte-kit
       </a>,
 
-      and
-      <a
-        class="text-blue-500 no-underline hover:underline"
-        href="https://svelte.dev/"
-        >
-        Svelte
-      </a>.
       If you're interested, you can check
       <a
         class="text-blue-500 no-underline hover:underline"
@@ -124,17 +118,10 @@ const posts = [
         >
         the source code
       </a>.
-      It was started from this
-      <a
-        class="text-blue-500 no-underline hover:underline"
-        href="https://github.com/garlandcrow/sapper-starter"
-        >starter template
-      </a>.
     </p>
 		`,
     tags: [
-      { name: 'Svelte', link: 'https://svelte.dev/' },
-      { name: 'Sapper', link: 'https://sapper.svelte.dev/' },
+      { name: 'Svelte', link: 'https://kit.svelte.dev/' },
       { name: 'Tailwind', link: 'https://www.tailwindcss.com' },
     ],
     published_at: '19 April 2020',

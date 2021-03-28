@@ -1,54 +1,48 @@
 {
   "name": "megzari.com",
   "version": "0.0.1",
-  "description": "Raphael Megzari's personal website",
-  "license": "MIT",
   "scripts": {
-    "build": "run-p build:tailwind build:sapper",
-    "build-storybook": "build-storybook",
-    "build:sapper": "NODE_ENV=production sapper build",
-    "build:tailwind": "NODE_ENV=production postcss src/global.css -o static/global-compiled.css",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "dev": "run-p dev:tailwind dev:sapper",
-    "dev:sapper": "sapper dev",
-    "dev:tailwind": "postcss src/global.css -o static/global-compiled.css -w",
-    "export": "yarn build:tailwind && NODE_ENV=production sapper export",
-    "start": "npx serve __sapper__/export",
-    "start:ssr": "node __sapper__/build",
-    "storybook": "start-storybook -p 6006",
-    "test": "run-p --race dev cy:run"
-  },
-  "dependencies": {
-    "compression": "^1.7.1",
-    "polka": "next",
-    "sirv": "^1.0.1"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "start": "svelte-kit start",
+    "format": "prettier --write ./src/**/*.{svelte,ts}",
+    "lint": "eslint ./src/**/*.{ts,svelte}",
+    "lint:fix": "eslint --fix ./src/**/*.{ts,svelte}",
+    "prelint": "npm run format",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-centered": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
-    "@storybook/svelte": "^5.3.19",
-    "autoprefixer": "^9.8.5",
-    "babel-loader": "^8.1.0",
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "@tailwindcss/jit": "^0.1.3",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "autoprefixer": "^10.2.5",
     "cssnano": "^4.1.10",
-    "cypress": "^4.10.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.1",
-    "prettier": "^2.0.5",
-    "prettier-plugin-svelte": "^1.1.0",
-    "purgecss-from-svelte": "^2.0.2",
-    "sapper": "^0.27.16",
-    "stylelint": "^13.6.1",
-    "stylelint-config-recommended": "^3.0.0",
-    "svelte": "^3.24.0",
-    "svelte-loader": "^2.13.6",
-    "svelte-loader-hot": "^0.3.0",
-    "svelte-preprocess": "^4.0.8",
-    "tailwindcss": "^1.5.1",
-    "webpack": "^4.43.0"
-  }
+    "eslint": "^7.22.0",
+    "eslint-plugin-svelte3": "^3.1.2",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
+    "postcss": "^8.2.8",
+    "postcss-load-config": "^3.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "svelte": "^3.29.0",
+    "svelte-preprocess": "^4.6.9",
+    "tailwindcss": "^2.0.3",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0",
+    "vite": "^2.1.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">= 12.17.0"
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,svelte}": [
+      "npm run lint:fix"
+    ]
+  },
+  "typings": "global.d.ts"
 }
