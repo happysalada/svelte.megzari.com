@@ -38,7 +38,7 @@
       <div class="hidden lg:block lg:ml-6">
         <div class="flex space-x-4">
           <a
-            href="."
+            href="/"
             class="{ path === '/' ? 'nav-active' : 'nav-inactive' } nav-default"
             >Home</a
           >
@@ -89,7 +89,7 @@
 <div class="{open ? 'block' : 'hidden'} md:hidden">
   <div class="px-2 pt-2 pb-3 flex flex-col space-y-1">
     <a
-      href="."
+      href="/"
       class="{ path === '/' ? 'nav-active' : 'nav-inactive'} nav-default"
       >Home</a
     >
