@@ -1,0 +1,27 @@
+---
+title: 'About this site'
+slug: 'about_this_site'
+outline: 'A brief reference to the technologies used to create this website'
+tags: [ { name: 'Svelte', link: 'https://kit.svelte.dev/' }, { name: 'Tailwind', link: 'https://www.tailwindcss.com' } ]
+published_at: '19 April 2020'
+---
+
+<script>
+  import PostHeader from '$lib/PostHeader.svelte'
+</script>
+
+<PostHeader {title} {published_at} {tags} />
+
+<div class="mt-2">
+
+This site was created using [Tailwind CSS](https://www.tailwindcss.com),
+[Svelte-kit](https://kit.svelte.dev/). If you're interested, you can check
+[the source code](https://github.com/happysalada/svelte.megzari.com)
+
+</div>
+
+<style>
+  a {
+    @apply text-blue-500 no-underline hover:underline;
+  }
+</style>

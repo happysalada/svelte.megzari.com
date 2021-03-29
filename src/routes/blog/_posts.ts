@@ -94,32 +94,6 @@ const posts = [
     slug: 'about_this_site',
     outline:
       'A brief reference to the technologies used to create this website',
-    html: `
-    <p class="py-6">
-      This site was created using
-      <a
-        class="text-blue-500 no-underline hover:underline"
-        href="https://www.tailwindcss.com"
-        >
-        Tailwind CSS
-      </a>,
-
-      <a
-        class="text-blue-500 no-underline hover:underline"
-        href="https://kit.svelte.dev/"
-        >
-        Svelte-kit
-      </a>,
-
-      If you're interested, you can check
-      <a
-        class="text-blue-500 no-underline hover:underline"
-        href="https://github.com/happysalada/svelte.megzari.com"
-        >
-        the source code
-      </a>.
-    </p>
-		`,
     tags: [
       { name: 'Svelte', link: 'https://kit.svelte.dev/' },
       { name: 'Tailwind', link: 'https://www.tailwindcss.com' },
@@ -127,9 +101,5 @@ const posts = [
     published_at: '19 April 2020',
   },
 ]
-
-posts.forEach((post) => {
-  post.html = post.html.replace(/^\t{3}/gm, '')
-})
 
 export default posts

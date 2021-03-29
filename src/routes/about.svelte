@@ -20,7 +20,7 @@
 </script>
 
 <script lang="ts">
-  import Project from '../components/Project.svelte'
+  import Project from '$lib/Project.svelte'
   export let projects
 </script>
 

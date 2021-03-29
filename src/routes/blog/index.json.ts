@@ -1,4 +1,4 @@
-import posts from './_posts'
+const posts = import.meta.glob('./*.svx')
 
 interface Post {
   title: string;
@@ -10,17 +10,19 @@ interface Post {
   slug: string;
 }
 
-const body = JSON.stringify(
-  posts.map(({ title, outline, tags, slug }: Post) => {
-    return { title, outline, tags, slug }
+let body: Post[] = []
+
+for (const path in posts) {
+  posts[path]().then((post: {metadata: Post}) => {
+    body.push(post.metadata)
   })
-)
+}
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
  */
 export function get() {
   return {
-    body,
+    body: JSON.stringify(body),
   }
 }

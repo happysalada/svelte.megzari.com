@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "../global.css";
-  import Nav from '../components/Nav.svelte'
-  import Footer from '../components/Footer.svelte'
+  import Nav from '$lib/Nav.svelte'
+  import Footer from '$lib/Footer.svelte'
   import { onMount } from 'svelte';
 
   let loaded = false
