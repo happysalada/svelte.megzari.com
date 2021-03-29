@@ -14,9 +14,10 @@ module.exports = {
 
     autoprefixer,
 
-    !dev &&
-      cssnano({
-        preset: 'default',
-      }),
+    // find out why it breaks the styles
+    // !dev &&
+    //   cssnano({
+    //     preset: 'default',
+    //   }),
   ],
 }

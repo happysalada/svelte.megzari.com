@@ -40,7 +40,7 @@
         tell Sapper to load the data for the page as soon as
         the user hovers over the link or taps it, instead of
         waiting for the 'click' event -->
-    <li>
+    <li class="list-none">
       <a
         class="text-blue-500 space-y-3"
         rel="prefetch"
