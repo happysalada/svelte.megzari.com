@@ -1,21 +1,21 @@
 <script context="module" lang="ts">
+  const posts = import.meta.glob('./*.svx')
+
+  let body = []
+
+  for (const path in posts) {
+    body.push(posts[path]().then(({metadata}) => metadata))
+  }
   /**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
   export async function load({ page, fetch }) {
-    const res = await fetch("/blog.json")
-    if (res.ok) {
-			return {
-				props: {
-					posts: await res.json()
-				}
-			};
-		}
-
-		return {
-			status: res.status,
-			error: new Error(`Could not load blog.json`)
-		};
+    const posts = await Promise.all(body)
+    return {
+      props: {
+        posts
+      }
+    };
   }
 </script>
 
