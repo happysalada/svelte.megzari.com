@@ -34,7 +34,7 @@
     Recent posts
   </h1>
 
-  <ul>
+  <ul class="list-none">
     {#each posts as {title, tags, outline, slug}}
     <!-- we're using the non-standard `rel=prefetch` attribute to
         tell Sapper to load the data for the page as soon as
