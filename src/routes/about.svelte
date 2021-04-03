@@ -36,8 +36,8 @@
       <!--Title-->
       <div class="font-sans">
         <h1
-          class="font-sans break-normal text-white pt-6 pb-2 text-3xl
-          md:text-4xl"
+          class="font-sans break-normal text-white pt-6 
+          pb-2 text-3xl md:text-4xl"
         >
           About me
         </h1>
