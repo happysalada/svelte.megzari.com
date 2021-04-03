@@ -10,7 +10,7 @@
 <style>
   .content-grid {
     display: grid;
-    grid-template-columns: 15vw auto 15vw;
+    grid-template-columns: 15vw 70vw 15vw;
     grid-template-rows: 10vh minmax(60vh, auto) 10vh;
     grid-template-areas:
       '. . .'

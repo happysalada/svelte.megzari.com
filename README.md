@@ -1,27 +1,16 @@
-## SvelteKit (vite) with Tailwind
-
-## now version 0.0.2
-
-This boilerplate is fresh init from `svelte@next` at the time of writing, the versions I get are as follows
-
-```
-@sveltejs/kit 1.0.0.next-49
-@sveltejs/adapter-static 1.0.0.next-3
-```
+# SvelteKit (vite) with Tailwind
 
 ## Demo
 
-![Sveltekit with Tailwind](screenshot.png)
-
-Go to [**Live Demo**](https://sveltekit-tailwind2.netlify.app/)
+Go to [**Live Demo**](megzari.com)
 
 ## Running the project
 
 Clone this repo and cd to the directory, then run npm or yarn
 
 ```bash
-npx degit dansvel/sveltekit-typescript-postcss-tailwind2 myproject
-cd myproject
+git clone https://github.com/happysalada/svelte.megzari.com my_blog
+cd my_blog
 pnpm install ## or npm or yarn
 pnpm run dev
 ```
@@ -38,9 +27,6 @@ pnpm run build
 
 with the command above, now you can generate static web, you can deploy the project in netlify, begin, vercel or else
 
-## Documentation
- - dev.to post [here](https://dev.to/dansvel/sveltekit-svelte-next-with-tailwind-2-4dnn) are outdate.
- - please read the [official documentation](https://github.com/sveltejs/kit/tree/master/documentation)
-## Credits
+## How to guide
 
-- [svelte-local-storage-store](https://github.com/joshnuss/svelte-local-storage-store) by Joshua Nussbaum
+check the about_this_site.svx file for the detailed blog post of how this was made.

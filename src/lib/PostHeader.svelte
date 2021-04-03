@@ -10,7 +10,7 @@
 </svelte:head>
 
 <!--Title-->
-<div class="font-sans">
+<div class="font-sans mb-10">
   <h1
     class="font-sans break-normal text-white pt-6 pb-2 text-3xl md:text-4xl"
   >

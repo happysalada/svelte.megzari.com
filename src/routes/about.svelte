@@ -46,8 +46,9 @@
         I'm a developper who thinks of programming as a form of Art!
         <br />
         <br />
-        I'm quite interested in alternatives to capitalism. contact me if you're a cooperative
-        and you want some help.
+        I'm quite interested in alternatives to capitalism.
+        Contact me if you're a cooperative and you are having problems that others potentially share.
+        I want to make software to facilitate the creation and running of cooperatives.
         <br />
         <br />
         raphael at megzari dot com

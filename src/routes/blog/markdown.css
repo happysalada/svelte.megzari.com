@@ -1,0 +1,23 @@
+a {
+  @apply text-blue-500 no-underline hover:underline;
+}
+
+ul li {
+  @apply list-disc;
+}
+
+ol li {
+  @apply list-decimal;
+}
+
+h2 {
+  @apply mt-10 mb-5 text-3xl;
+}
+
+pre {
+  @apply mt-5 mb-10;
+}
+
+code {
+  @apply text-purple-500;
+}
