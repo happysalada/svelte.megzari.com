@@ -1,4 +1,3 @@
-const windicss = require('svelte-windicss-preprocess').preprocess
 const { mdsvex } = require('mdsvex')
 const mdsvexConfig = require('./mdsvex.config.cjs')
 const sveltePreprocess = require('svelte-preprocess')
@@ -10,9 +9,6 @@ module.exports = {
   // for more information about preprocessors
   preprocess: [
     mdsvex(mdsvexConfig),
-    windicss({
-      config: 'windi.config.cjs',
-    }),
     sveltePreprocess({
       defaults: {
         style: 'postcss',

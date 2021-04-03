@@ -1,2 +1,8 @@
 @import "spinner.css";
 @import "custom.css";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
