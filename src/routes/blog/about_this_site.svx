@@ -38,7 +38,7 @@ It's a collection of information I wish I had when doing this.
 ## How-to
 
 - From the [docs](https://svelte.dev/blog/sveltekit-beta), to create a squeletton using the following inside your repo.
-Note I'm using [pnpm](pnpm.js.org/) but it works the same with npm.
+Note I'm using [pnpm](https://pnpm.js.org/) but it works the same with npm.
 ```bash
 pnpm init svelte@next
 pnpm install
