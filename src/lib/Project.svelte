@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Tag from "./Tag.svelte";
   export let project;
 </script>

@@ -1,27 +1,6 @@
-<script context="module" lang="ts">
-  /**
-	 * @type {import('@sveltejs/kit').Load}
-	 */
-  export async function load({ page, fetch }) {
-    const res = await fetch("/about.json")
-    if (res.ok) {
-			return {
-				props: {
-					projects: await res.json()
-				}
-			};
-		}
-
-		return {
-			status: res.status,
-			error: new Error(`Could not load about.json`)
-		};
-  }
-</script>
-
 <script lang="ts">
   import Project from '$lib/Project.svelte'
-  export let projects
+  import projects from '../data/projects.json'
 </script>
 
 <svelte:head>

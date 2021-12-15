@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Tag from "$lib/Tag.svelte";
   export let title;
   export let published_at;

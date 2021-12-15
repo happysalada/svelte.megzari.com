@@ -19,7 +19,7 @@
   }
 </script>
 
-<script>
+<script lang="ts">
   import Tag from "$lib/Tag.svelte";
   export let posts;
 </script>

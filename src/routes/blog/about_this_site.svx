@@ -6,7 +6,7 @@ tags: [ { name: 'Svelte Kit', link: 'https://kit.svelte.dev/' }, { name: 'Tailwi
 published_at: '3 April 2021'
 ---
 
-<script>
+<script lang="ts">
   import './markdown.css'
   import PostHeader from '$lib/PostHeader.svelte'
 </script>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let tag;
 </script>
 <a href="{ tag.link }" target="_blank">
