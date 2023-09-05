@@ -1,6 +1,6 @@
 <script lang="ts">
   import Project from '$lib/Project.svelte'
-  import projects from '../data/projects.json'
+  import projects from '../../data/projects.json'
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
       <!--Title-->
       <div class="font-sans">
         <h1
-          class="font-sans break-normal text-white pt-6 
+          class="font-sans break-normal text-white pt-6
           pb-2 text-3xl md:text-4xl"
         >
           About me
@@ -25,8 +25,8 @@
         I'm a developper who thinks of programming as a form of Art!
         <br />
         <br />
-        I'm quite interested in alternatives to capitalism.
-        Contact me if you're a cooperative and you are having problems that others potentially share.
+        I'm quite interested in alternatives to capitalism. Contact me if you're
+        a cooperative and you are having problems that others potentially share.
         I want to make software to facilitate the creation and running of cooperatives.
         <br />
         <br />
@@ -41,6 +41,7 @@
     {/each}
   </div>
 </div>
+
 <!--/container-->
 
 <style>
