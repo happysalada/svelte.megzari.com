@@ -35,7 +35,7 @@
     "tailwindcss": "^3.3.3",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9",
+    "vite": "^4.4.11",
     "vite-plugin-image-optimizer": "^1.1.7",
     "vite-plugin-iso-import": "^1.0.0",
     "vite-plugin-node-stdlib-browser": "^0.2.1"
