@@ -7,10 +7,10 @@ settings:
 devDependencies:
   '@sveltejs/adapter-cloudflare':
     specifier: ^2.3.3
-    version: 2.3.3(@sveltejs/kit@1.25.1)
+    version: 2.3.3(@sveltejs/kit@1.25.2)
   '@sveltejs/kit':
-    specifier: ^1.25.1
-    version: 1.25.1(svelte@4.2.1)(vite@4.4.11)
+    specifier: ^1.25.2
+    version: 1.25.2(svelte@4.2.1)(vite@4.4.11)
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.7.5
     version: 6.7.5(@typescript-eslint/parser@6.7.4)(eslint@8.51.0)(typescript@5.2.2)
@@ -860,19 +860,19 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-cloudflare@2.3.3(@sveltejs/kit@1.25.1):
+  /@sveltejs/adapter-cloudflare@2.3.3(@sveltejs/kit@1.25.2):
     resolution: {integrity: sha512-bbcm6kq4dEluFtFJZed3KSRG4f5GUElYkVfOmnPruTqZ29nTElPJTomAu5QCp7GLkwA26O3h1Dk7+d9yLTQEXg==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
       '@cloudflare/workers-types': 4.20230904.0
-      '@sveltejs/kit': 1.25.1(svelte@4.2.1)(vite@4.4.11)
+      '@sveltejs/kit': 1.25.2(svelte@4.2.1)(vite@4.4.11)
       esbuild: 0.18.20
       worktop: 0.8.0-next.15
     dev: true
 
-  /@sveltejs/kit@1.25.1(svelte@4.2.1)(vite@4.4.11):
-    resolution: {integrity: sha512-pD8XsvNJNgTNkFngNlM60my/X8dXWPKVzN5RghEQr0NjGZmuCjy49AfFu2cGbZjNf5pBcqd2RCNMW912P5fkhA==}
+  /@sveltejs/kit@1.25.2(svelte@4.2.1)(vite@4.4.11):
+    resolution: {integrity: sha512-USuuSpdAPFDiLi58N2Pwd/TG9bcUSPAlzE5iaAXaLyCTWa3l36HDKH6nV5NqBybwfeux1ZwgtIeITLZJDJ6HDg==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
