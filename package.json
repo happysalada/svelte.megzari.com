@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-cloudflare": "^2.3.3",
-    "@sveltejs/kit": "^1.26.0",
+    "@sveltejs/kit": "^1.27.2",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.8.0",
     "autoprefixer": "^10.4.16",
