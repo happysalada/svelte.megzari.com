@@ -24,7 +24,7 @@
     "postcss-load-config": "^4.0.2",
     "postcss-preset-env": "^9.3.0",
     "prettier": "^3.1.0",
-    "prettier-plugin-svelte": "^3.1.0",
+    "prettier-plugin-svelte": "^3.1.2",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
     "remark-abbr": "^1.4.1",
