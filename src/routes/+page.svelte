@@ -42,12 +42,12 @@
 
 <style lang="postcss">
   .headline {
-    font-size: 4rem;
+    font-size: 10vh;
   }
 
   @media (min-width: 768px) {
     .headline {
-      font-size: 8rem;
+      font-size: 15vh;
     }
   }
 </style>

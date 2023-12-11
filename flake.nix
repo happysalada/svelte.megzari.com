@@ -68,19 +68,19 @@
               name = "dev";
               category = "dev";
               help = "Start dev server locally";
-              command = "npm run dev";
+              command = "bun run dev";
             }
             {
               name = "deps_update";
               category = "dev";
               help = "update dependencies";
-              command = "ncu -ui";
+              command = "bun update --save";
             }
             {
               name = "build";
               category = "dev";
               help = "build the project for release";
-              command = "npm run build";
+              command = "bun run build";
             }
             {
               name = "preview";
