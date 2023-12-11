@@ -13,11 +13,11 @@ in
     };
 
     environmentFile = lib.mkOption {
-      type = lib.types.path;
+      type = lib.types.nullOr lib.types.path;
       description = lib.mdDoc ''
         Path to the file containing environment secrets needed to run the service.
       '';
-      default = "";
+      default = null;
       example = "config.age.secrets.ENVIRONMENT_FILE.path";
     };
 
@@ -41,7 +41,7 @@ in
         ExecStart = "${pkgs.megzari_com}/bin/megzari_com";
 
         Restart = "always";
-        EnvironmentFile = cfg.environmentFile;
+        EnvironmentFile = lib.mkIf (cfg.environmentFile != null) cfg.environmentFile;
 
         # hardening
         AmbientCapabilities = "";
