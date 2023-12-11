@@ -33,11 +33,22 @@ Founder of 2 companies, currently exploring new ventures.
 Remote
 
 - Contributed to building a modern banking infrastructure using gRPC, Rust, and microservices.
-- Enhanced the onboarding team's efficiency by rewriting PHP microservices in Rust, significantly improving performance.
+- Enhanced the onboarding team's efficiency by rewriting PHP to microservices in Rust, significantly improving performance.
+
+### Chief Technology Officer (CTO)
+**UNION**  
+*January 2018 - August 2021 (3 years 8 months)*  
+Tokyo, Japan
+
+- Engineered a high-performance backend using Elixir (Phoenix) and Postgres.
+- Led frontend development with Alpine JS, LiveView (Elixir), and Tailwind CSS.
+- Implemented DevOps practices on bare metal for maximum performance using NixOS, systemd.
+- Designed an event-driven architecture capable of processing 300 million events per hour.
+- Emphasized the use of open-source software (Gitea, Vector, Loki, Grafana, Postgres, Prometheus) for system reliability and security.
 
 ### Software and Web Developer
 **Bespoke Inc.**  
-*June 2016 - January 2018 (1 year 8 months)*  
+*June 2015 - January 2018 (2 year 8 months)*  
 Tokyo, Japan
 
 - Full-stack developer with expertise in React (Frontend) and Ruby, Node.js (Sails.js) for backend development.

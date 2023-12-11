@@ -31,7 +31,7 @@
     </div>
     <div class="rounded-md mt-3 sm:mt-0 sm:ml-3 md:mt-0">
       <a
-        href="/about"
+        href="/cv"
         class="w-full flex items-center justify-center px-8 py-3 border-4 text-base leading-6 font-medium rounded-md text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-black focus:outline-none focus:ring-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
       >
         About
