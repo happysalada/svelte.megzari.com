@@ -44,9 +44,9 @@
       {
         nixosModules = modules;
         packages = packages;
-        # overlays.default = final: prev: {
-        #   inherit (packages) brocop brocop_admin;
-        # };
+        overlays.default = final: prev: {
+          inherit (packages) megzari_com;
+        };
         devShell = pkgs.devshell.mkShell {
           packages = dev_packages;
           env = [
