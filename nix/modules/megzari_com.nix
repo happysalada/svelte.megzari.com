@@ -37,8 +37,8 @@ in
 
       serviceConfig = {
         DynamicUser = true;
-        User = "brocop";
-        ExecStart = "${pkgs.nodejs}/bin/node --trace-deprecation ${pkgs.megzari_com}/lib/node_modules/null/build";
+        User = "megzari_com";
+        ExecStart = "${pkgs.megzari_com}/bin/megzari_com";
 
         Restart = "always";
         EnvironmentFile = cfg.environmentFile;
