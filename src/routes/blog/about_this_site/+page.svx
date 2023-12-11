@@ -7,7 +7,7 @@ published_at: '3 April 2021'
 ---
 
 <script lang="ts">
-  import './markdown.css'
+  import '../markdown.css'
   import PostHeader from '$lib/PostHeader.svelte'
 </script>
 
@@ -154,7 +154,7 @@ Honestly though, I don't think it makes much of a difference if you use your oth
 
 ## Conclusion
 
-Is worth learning svelte (if you don't already know it) to deploy a static blog?
+Is it worth learning svelte (if you don't already know it) to deploy a static blog?
 Probably not! However if you ever feel like trying, now you have a simple project to do so!
 
 

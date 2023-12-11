@@ -1,0 +1,113 @@
+---
+title: 'Raphael Megzari, Tech Generalist'
+outline: 'Frontend (Svelte), Backend (Rust), DevOps (NixOS), ML (LLM, NLP), Web3  Founder of 2 companies, currently exploring new ventures.
+'
+published_at: '1 December 2023'
+---
+
+<div class="container mx-auto px-4 text-white">
+
+<header class="text-3xl font-bold my-4">
+  Raphael Megzari
+  <p class="text-xl">Tech Generalist</p>
+</header>
+
+Frontend (Svelte), Backend (Rust), DevOps (NixOS), ML (LLM, NLP), Web3  
+Founder of 2 companies, currently exploring new ventures.
+
+---
+
+## Experience
+
+### Entrepreneurial Sabbatical
+*January 2023 - Present*  
+
+- **Find-Stock-Broker.com**: Developed a comprehensive lead generation platform for stock brokers, focusing on dynamic landing page generation and campaign optimization.
+- **Agora**: Engineered an innovative contract enhancement platform using machine learning to augment text analysis and drafting processes.
+- **Brocop.com**: Founded a KYC and KYB compliance platform, enhancing security and user experience, and automating compliance processes.
+- **Sweif.com**: Created a remittance platform for Latin America using cryptocurrency rails, focusing on user experience and secure crypto integrations.
+
+### Senior Backend Developer (Rust)
+**Kraken Digital Asset Exchange**  
+*January 2022 - December 2022 (1 year)*  
+Remote
+
+- Contributed to building a modern banking infrastructure using gRPC, Rust, and microservices.
+- Enhanced the onboarding team's efficiency by rewriting PHP microservices in Rust, significantly improving performance.
+
+### Software and Web Developer
+**Bespoke Inc.**  
+*June 2016 - January 2018 (1 year 8 months)*  
+Tokyo, Japan
+
+- Full-stack developer with expertise in React (Frontend) and Ruby, Node.js (Sails.js) for backend development.
+- Led projects in Natural Language Processing (NLP), focusing on chatbots in English and Japanese using NLTK.
+
+### Co-founder
+**Happy Salada**  
+*April 2011 - December 2014 (3 years 9 months)*  
+Tokyo, Japan
+
+- Co-founded a healthy food delivery platform, growing sales from zero to ¥60 million/year and opening 2 stores.
+- Developed an online ordering system and a marketing automation platform.
+- Managed a team of 15, overseeing marketing, supply chain, and customer service.
+- Maintained the business operations, focusing on growth and sustainability.
+
+---
+
+## Education
+
+### MS in CS with a Minor in Entrepreneurship
+**Ecole Centrale Paris**  
+*September 2007 - April 2011*
+
+- Software (C++, Python)
+- Financial mathematics
+- Completed a minor in Entrepreneurship, gaining insights into business development and startup dynamics.
+
+---
+
+## Miscellaneous
+
+- **Interests**: Keen interest in macroeconomics, always seeking to understand and analyze global economic trends.
+- **Languages**: 
+  - Fluent in Japanese (lived in Japan for 10 years, started a company, and achieved JLPT N1 proficiency).
+  - Conversational in Mandarin (HSK 3 certified, with a Mandarin native-speaking wife).
+- **Open Source Contribution**: Active contributor to NixOS since 2020, focusing on enhancing and maintaining the robustness of the platform.
+
+---
+</div>
+
+<style>
+a {
+  @apply text-blue-500 no-underline hover:underline;
+}
+
+ul li {
+  @apply list-disc list-inside;
+}
+
+ol li {
+  @apply list-decimal;
+}
+
+h2 {
+  @apply mt-10 mb-5 text-3xl;
+}
+
+pre {
+  @apply mt-5 mb-10;
+}
+
+p {
+  @apply my-4
+}
+
+h3 {
+  @apply my-4 text-2xl;
+}
+
+hr {
+  @apply my-4
+}
+</style>
