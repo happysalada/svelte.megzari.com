@@ -9,7 +9,6 @@
     "lint:fix": "eslint --fix ./src/**/*.svelte"
   },
   "devDependencies": {
-    "@sveltejs/adapter-cloudflare": "^2.3.3",
     "@sveltejs/kit": "^1.27.6",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.10.0",
@@ -31,6 +30,7 @@
     "remark-github": "^12.0.0",
     "sharp": "^0.33.0",
     "svelte": "^4.2.8",
+    "svelte-adapter-bun": "^0.5.1",
     "svelte-preprocess": "^5.1.1",
     "tailwindcss": "^3.3.5",
     "tslib": "^2.6.2",
