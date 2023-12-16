@@ -1,5 +1,6 @@
-import { sveltekit, type UserConfig } from '@sveltejs/kit/vite';
+import { sveltekit } from '@sveltejs/kit/vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import type { UserConfig } from 'vite';
 // import nodePolyfills from 'vite-plugin-node-stdlib-browser';
 // import { isoImport } from 'vite-plugin-iso-import';
 

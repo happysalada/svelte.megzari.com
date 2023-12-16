@@ -20,18 +20,13 @@
         update-dependencies = pkgs.nuenv.writeScriptBin {
           name = "ud";
           script = ''
-            ncu -ui
-            let $hash = (prefetch-npm-deps package-lock.json)
-            let $new_content = (open ./nix/packages/pin.json | update hash $hash)
-            $new_content | to json | save ./nix/packages/pin.json --force
+            bun update --save
           '';
         };
         dev_packages = with pkgs; [
           nodejs_latest
           nodePackages_latest.dotenv-cli
           bun
-          npm-check-updates
-          prefetch-npm-deps
           # update dependencies with nix
           update-dependencies
 
